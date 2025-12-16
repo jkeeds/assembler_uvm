@@ -1,0 +1,33 @@
+; копирование 5 элементов из MEM[0...4] в MEM[10...14]
+LOADC 0, 0
+LOADC 10, 1
+; MEM[0...4] = 1,2,3,4,5
+LOADC 1, 2
+STORE 2, 0, 0
+LOADC 2, 2
+STORE 2, 0, 1
+LOADC 3, 2
+STORE 2, 0, 2
+LOADC 4, 2
+STORE 2, 0, 3
+LOADC 5, 2
+STORE 2, 0, 4
+; копирование
+LOAD 3, 0
+STORE 3, 1, 0
+LOADC 1, 0
+
+LOAD 3, 0
+STORE 3, 1, 1
+LOADC 2, 0
+
+LOAD 3, 0
+STORE 3, 1, 2
+LOADC 3, 0
+
+LOAD 3, 0
+STORE 3, 1, 3
+LOADC 4, 0
+
+LOAD 3, 0
+STORE 3, 1, 4
