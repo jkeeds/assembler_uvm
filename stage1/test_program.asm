@@ -1,0 +1,5 @@
+; тест
+LOADC 10, 0
+LOADC 20, 1
+STORE 0, 1, 5
+ROR 1, 0
